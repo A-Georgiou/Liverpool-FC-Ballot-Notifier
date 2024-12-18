@@ -62,7 +62,7 @@ crontab -e
 
 ### Cleaning up
 
-To remove the virtual environment and cached files:
+If you wish to remove the virtual environment and cached files, you can run:
 ```bash
 make clean
 ```
