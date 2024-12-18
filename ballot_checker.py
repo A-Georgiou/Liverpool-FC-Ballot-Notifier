@@ -59,7 +59,7 @@ class BallotChecker:
 
         logging.info(f"❌ No local general sale available for {title}")
         return False
-=
+
     def get_ticket_links(self, page: Page) -> List[Tuple[str, str]]:
         ticket_links = page.locator("a.ticket-card.fixture").all()
         if not ticket_links:
