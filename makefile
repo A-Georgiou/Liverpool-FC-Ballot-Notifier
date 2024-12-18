@@ -14,6 +14,7 @@ venv:
 .PHONY: setup
 setup: venv
 	$(VENV_DIR)/bin/pip install -r $(REQUIREMENTS)
+	$(VENV_DIR)/bin/playwright install-deps
 	$(VENV_DIR)/bin/playwright install
 
 .PHONY: run
